@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "airbnb-base"
+  ],
+  "ignorePatterns": [
+    "src/scripts/core/*.js"
+  ],
+  "rules": {
+    "semi": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "require-jsdoc": "off",
+    "no-undef": "off",
+    "no-empty-function": "off",
+    "no-floating-decimal": "off",
+    "object-curly-newline": "off",
+    "no-plusplus": "off",
+    "no-loop-func": "off",
+    "no-restricted-globals": "off",
+    "quote-props": "off",
+    "no-unused-vars": "off",
+    "linebreak-style": "off",
+    "no-unused-expressions": "off",
+    "no-useless-constructor": "off",
+    "class-methods-use-this": "off",
+    "func-names": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-restricted-syntax" : "off"
+  }
+}

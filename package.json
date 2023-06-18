@@ -1,0 +1,20 @@
+{
+  "name": "filter",
+  "version": "1.0.0",
+  "description": "html elements filter",
+  "main": "main.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "keywords": [
+    "JS",
+    "javascript",
+    "filter"
+  ],
+  "author": "jurij <andreiczuk@tutanota.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

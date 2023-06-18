@@ -1,0 +1,8 @@
+.DS_Store
+npm-debug.log
+index.html
+/assets/
+.cache
+.idea
+node_modules
+dist
