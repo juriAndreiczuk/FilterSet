@@ -1,4 +1,5 @@
 import FilterSearch from './FilterSearch'
+import FilterTabs from './FilterTabs'
 
 export default class FilterSet {
   constructor(mainContainer) {
@@ -23,6 +24,7 @@ export default class FilterSet {
     const { mainContainer, tagsSelector } = props
     const mainObj = new FilterSet(mainContainer)
     mainObj.search = FilterSearch.create(mainObj)
+    mainObj.tabs = FilterTabs.create(mainObj)
     return mainObj
   }
 }
