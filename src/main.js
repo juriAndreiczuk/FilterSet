@@ -1,5 +1,6 @@
 import FilterSet from './filter/FilterSet'
 
 FilterSet.create({
-  mainContainer: '#target-section'
+  mainContainer: '#target-section',
+  tags: ['tags', 'category']
 })

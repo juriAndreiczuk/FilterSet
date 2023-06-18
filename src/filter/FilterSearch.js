@@ -4,7 +4,6 @@ export default class FilterSearch extends FilterBase {
   constructor(mainObj) {
     super(mainObj)
     this.input = this.container.querySelector('[data-filterset-search="input"]')
-    this.items = this.container.querySelectorAll('[data-filterset-search="item"]')
     this.input.addEventListener('keyup', () => { this.filter() })
   }
 
@@ -14,11 +13,10 @@ export default class FilterSearch extends FilterBase {
       return false
     }
 
-    this.targetItems = Array.from(this.items)
-      .filter(item => {
-        const currentText = item.querySelector('[data-filterset-search="text"]')
-        return !currentText.innerHTML.toLowerCase().includes(this.input.value.toLowerCase())
-      })
+    this.targetItems = Array.from(this.items).filter(item => {
+      const currentText = item.querySelector('[data-filterset-search="text"]')
+      return !currentText.innerHTML.toLowerCase().includes(this.input.value.toLowerCase())
+    })
     this.fireEvent()
   }
 
