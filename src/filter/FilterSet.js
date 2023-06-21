@@ -24,7 +24,7 @@ export default class FilterSet {
     const mainObj = new FilterSet(props.mainContainer)
     mainObj.search = FilterSearch.create(mainObj)
     mainObj.tabs = FilterTabs.create(mainObj)
-    props.tags.forEach(tag => { mainObj.tags = FilterTags.create(mainObj, tag) })
+    props.tags.forEach(tag => { mainObj[tag] = FilterTags.create(mainObj, tag) })
     return mainObj
   }
 }

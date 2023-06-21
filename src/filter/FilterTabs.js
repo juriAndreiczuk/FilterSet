@@ -17,7 +17,7 @@ export default class FilterTabs extends FilterBase {
   }
 
   changeTab(n) {
-    if (this.activeIndex === n) { 
+    if (this.activeIndex === n) {
       return false
     }
 

@@ -16,9 +16,9 @@ export default class FilterBase {
     this.mainClass.filter(payload)
   }
 
-  changeActive = (items, n = false) => {
+  changeActive (items, n = false) {
     items.forEach(btn => btn.classList.remove('active'))
-    if(n !== false) {
+    if (n !== false) {
       items[n].classList.add('active')
     }
   }
